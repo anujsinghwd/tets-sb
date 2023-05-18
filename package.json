@@ -2,13 +2,14 @@
   "name": "common-lib",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "build/lib/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "storybook dev -p 6006",
     "tsc": "./node_modules/.bin/tsc -p .",
     "tsc:watch": "./node_modules/.bin/tsc -p . -w",
-    "build-storybook": "storybook build"
+    "build-storybook": "tsc",
+    "build": "tsc"
   },
   "keywords": [],
   "author": "",
@@ -57,5 +58,8 @@
     "extends": [
       "plugin:storybook/recommended"
     ]
-  }
+  },
+  "files": [
+    "build/**/*"
+  ]
 }
