@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+      "incremental": true,
+      "rootDir": ".",
+      "outDir": "build",
+      "jsx": "react",
+      "esModuleInterop": true,
+      "lib": ["dom", "ES2018"],
+      "types": [
+        "react",
+      ]
+    },
+    "include": [
+      "lib/**/*",
+      "*.ts",
+      "*.tsx"
+    ],
+    "exclude": [
+      "node_modules",
+      "stories/**/*",
+    ]
+  }
+  
